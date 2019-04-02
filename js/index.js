@@ -89,16 +89,24 @@ $('.topic_list div').on('click',function(){
 
  // 重新答题
  $('.again').on('click',function(){
-    if (share_status == true) {
+     var allshare = localStorage.getItem('allshare');
+     if(allshare == 'true'){
+        //  已经分享一次，无线答题
         localStorage.removeItem('selected_arr')
-        // window.location.reload();
         window.location.href="index.html?time="+((new Date()).getTime());
-        // window.location.href="./index.html"
-        // window.location.href="#begin";
-    } else {
-        showCover();
-        $('.share').show();
-    }
+     }else{
+          if (share_status == true) {
+            localStorage.removeItem('selected_arr')
+            // window.location.reload();
+            window.location.href="index.html?time="+((new Date()).getTime());
+            // window.location.href="./index.html"
+            // window.location.href="#begin";
+        } else {
+            showCover();
+            $('.share').show();
+            // 已经分享一次
+        }
+     }
 })
 
 
@@ -115,6 +123,8 @@ $('.share_hide').on('click',function(){
     $('.share').hide();
      // 点击蒙版以后已分享
      share_status = true;
+    // 是否已经分享一次 
+     localStorage.setItem('allshare','true');
 })
 
 
@@ -291,6 +301,7 @@ $('.share_hide').on('click',function(){
         // 清缓存
         $('.qing').on('click',function(){
             localStorage.removeItem('selected_arr')
+            localStorage.removeItem('allshare')
             window.location.reload()
         })
 
@@ -334,10 +345,10 @@ $('.share_hide').on('click',function(){
         $('.receive_left').on('click',function(){
             var show_text = $(this).text()
             dianji = 'zuo'
-            if (show_text.includes('领取')) {
+            if (show_text.includes('抽奖')) {
                 if (count_true < 6) {
                     // alert('小于6')
-                    $('.timu_number').text('6道及6道以上')
+                    $('.timu_number').text('6道题')
                     showCover();
                     $('.libao').show();
                 } else {
@@ -371,6 +382,7 @@ $('.share_hide').on('click',function(){
             } else {
                 var select_val = $('.select_wang').val() // 获取本网还是异网
                 showCover()
+                select_val == 0 ? $('.pop_benw a').css('background','url(./images/ben_guang.gif) no-repeat').attr('href','https://mp.weixin.qq.com/s/K6W3CaZajWdDb4WgBxJUXQ') :  $('.pop_yif a').css('background','url(./images/yi_guang.gif) no-repeat').attr('href','https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW')
                 select_val == 0 ? $('.pop_benw').show() : $('.pop_yif').show()
             }
         })
@@ -379,13 +391,13 @@ $('.share_hide').on('click',function(){
         $('.receive_right').on('click',function(){
             var show_text = $(this).text()
             dianji = 'you'
-            if (show_text.includes('领取')) {
+            if (show_text.includes('抽奖')) {
                 if (count_true < 6) {
-                    $('.timu_number').text('9道')
+                    $('.timu_number').text('9道题')
                     showCover();
                     $('.libao').show();
                 } else if (count_true < 9) {
-                    $('.timu_number').text('9道')
+                    $('.timu_number').text('9道题')
                     showCover();
                     $('.libao').show();
                 } else {
@@ -408,11 +420,7 @@ $('.share_hide').on('click',function(){
                                 $('.d_unclaimed').css('background', 'url(images/lhd_02.png) no-repeat')
                                 $('.pop_yio').show()
                             }
-                            // $('.d_unclaimed').css('background', 'url(images/lhd_02.png) no-repeat')
-                            // $(this).text('点击查看')
-                            // showCover();
-                            // let select_val = $('.select_wang').val() // 获取本网还是异网
-                            // select_val == 0 ? $('.pop_benw').show() : $('.pop_yio').show()
+
                         }
                     } else {
                         // 未关注
@@ -423,6 +431,7 @@ $('.share_hide').on('click',function(){
             } else {
                 var select_val = $('.select_wang').val() // 获取本网还是异网
                 showCover()
+                select_val == 0 ?  $('.pop_benw a').css('background','url(./images/benyi_da.gif) no-repeat').attr('href','https://mp.weixin.qq.com/s/j1T0k3uQUWYV5tzFLlNvEA') :   $('.pop_yif a').css('background','url(./images/benyi_da.gif) no-repeat').attr('href','https://mp.weixin.qq.com/s/j1T0k3uQUWYV5tzFLlNvEA')
                 select_val == 0 ? $('.pop_benw').show() : $('.pop_yif').show()
             }
         })
@@ -437,6 +446,9 @@ $('.share_hide').on('click',function(){
             $('.main').addClass('main_bg').show()
             selected_arr = getstory_select // 将本地存储的数组赋值给全局变量
             true_number(selected_arr) // 调用选项卡页面展示函数
+            // 改变主页提示内容
+            var str = '<p>您最高答对<span>9</span>道题</p><p>点击地标图片可查看神秘档案</p>'
+            $('.right_question').css('width',"4rem").html(str);
         } else {
             // 创建swiper容器
             mySwiper= new Swiper('.swiper-container', {
