@@ -48,6 +48,8 @@ section.loader > div:nth-child(2) div {
   height: 4.45rem;
   background: url(../images/in_bg_01.png) no-repeat;
   background-size: cover;
+  position: fixed;
+  top: 0;
 }
 .page > div:nth-child(2) {
   width: 7.5rem;
