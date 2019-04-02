@@ -175,7 +175,7 @@ section.loader > div:nth-child(2) div {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: .4rem;
 }
 .main_content > div:nth-child(2) > img {
   width: .18rem;
@@ -398,7 +398,7 @@ section.loader > div:nth-child(2) div {
   display: none;
 }
 .topic > div:nth-child(1) {
-  margin-top: .75rem;
+  margin-top: .5rem;
 }
 .topic > div:nth-child(1) > div {
   width: 6.5rem;
