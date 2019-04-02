@@ -348,15 +348,13 @@ $('.share_hide').on('click',function(){
                                 $('.x_unclaimed').css('background', 'url(images/lhx_02.png) no-repeat')
                                 $(this).text('点击查看')
                                 showCover();
+                                $('.pop_benw a').css('background','url(./images/ben_guang.gif) no-repeat').attr('href','https://mp.weixin.qq.com/s/K6W3CaZajWdDb4WgBxJUXQ')
                                 $('.pop_benw').show();
                             }else{
+                                $('.pop_yif a').css('background','url(./images/yi_guang.gif) no-repeat').attr('href','https://service.bj.10086.cn/m/num/num/commonNum/showFontPage.action?busiCode=YDWKWXYW')
                                 showCover();
                                 $('.x_unclaimed').css('background', 'url(images/lhx_02.png) no-repeat')
                                 $('.pop_yio').show()
-                                // if(zhuanzeng){
-                                //     $('.pop_yio').show()
-                                // }
-                                
                             }
                         } else {
                             $('.main_content').hide()
@@ -401,8 +399,10 @@ $('.share_hide').on('click',function(){
                                 $('.d_unclaimed').css('background', 'url(images/lhd_02.png) no-repeat')
                                 showCover();
                                 $(this).text('点击查看')
+                                $('.pop_benw a').css('background','url(./images/benyi_da.gif) no-repeat').attr('href','https://mp.weixin.qq.com/s/j1T0k3uQUWYV5tzFLlNvEA')
                                 $('.pop_benw').show();
                             }else{
+                                $('.pop_yif a').css('background','url(./images/benyi_da.gif) no-repeat').attr('href','https://mp.weixin.qq.com/s/j1T0k3uQUWYV5tzFLlNvEA')
                                 showCover();
                                 $('.d_unclaimed').css('background', 'url(images/lhd_02.png) no-repeat')
                                 $('.pop_yio').show()
