@@ -258,6 +258,7 @@ $('.share_hide').on('click',function(){
             if(istel($('#inputTel').val())){
                 $('.pop_yit').hide()
                 $('.pop_yith').show()
+                $('.inputTel').text($('#inputTel').val());
             }else{
                 alert("请输入正确的北京移动号码")
             }
@@ -445,15 +446,15 @@ $('.share_hide').on('click',function(){
 
             })
         }
-     //移动手机号码验证
-    function istel(tel) {
-        var rtn = false;
-        //移动号段验证
-        var regtel = /^((13[4-9])|(15([0-2]|[7-9]))|(18[2|3|4|7|8])|(178)|(147))[\d]{8}$/;
-        if (regtel.test(tel)) {
-            rtn = true;
-        }
-        return rtn;
+  //移动手机号码验证
+  function istel(tel) {
+    var rtn = false;
+    //移动号段验证
+    var regtel = /^((13[4-9])|(15([0-2]|[7-9]))|(18[2|3|4|7|8])|(178)|(147))[\d]{8}$/;
+    if (regtel.test(tel)) {
+        rtn = true;
     }
+    return rtn;
+}
 });
         
