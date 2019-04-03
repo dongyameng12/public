@@ -54,7 +54,7 @@ section.loader > div:nth-child(2) div {
 .page > div:nth-child(2) {
   width: 7.5rem;
   /* height: 8.15rem; */
-  height: calc(100% - 4.45rem);
+  height: calc(100% - 4rem);
   background: url(../images/in_bg_02.png) no-repeat;
   background-size: cover;
   position: fixed;
@@ -1069,7 +1069,7 @@ section.loader > div:nth-child(2) div {
     position: fixed;
     bottom: 0;
     /* height: 9.43rem; */
-    height: calc(100% - 4.45rem);
+    height: calc(100% - 4rem);
   }
 }
 
@@ -1082,6 +1082,6 @@ section.loader > div:nth-child(2) div {
     position: fixed;
     bottom: 0;
     /* height: 12.43rem; */
-    height: calc(100% - 4.45rem);
+    height: calc(100% - 4rem);
   }
 }
