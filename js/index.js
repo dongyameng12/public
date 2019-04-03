@@ -244,10 +244,11 @@ $('.share_hide').on('click',function(){
             $('.pop_benw').hide()
         })
 
-        // 发送好友
+        // 发送好友（改好的）
         $('.libao .close').on('click',function(){
+            hiddenCover() 
             $('.libao').hide()
-            $('.share').show()
+            // $('.share').show()
         })
 
         //  异网弹窗1点击取消
