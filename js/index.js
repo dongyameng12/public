@@ -147,7 +147,7 @@ $('.share_hide').on('click',function(){
             })
             // 展示弹窗中显示的几个地表
             $('.right_question span:eq(0)').text(count_true)
-            $('.right_question span:eq(1)').text(count_true+"个")
+            // $('.right_question span:eq(1)').text(count_true)
             if (count_true < 6) {
             } else if (count_true < 9) {
                 $('.receive_left').css({ 'background': 'url(images/btn_red.png) no-repeat', 'text-shadow': '2px 2px 1px #da1210' })
@@ -448,7 +448,7 @@ $('.share_hide').on('click',function(){
             selected_arr = getstory_select // 将本地存储的数组赋值给全局变量
             true_number(selected_arr) // 调用选项卡页面展示函数
             // 改变主页提示内容
-            var str = '<p>您最高答对<span>9</span>道题</p><p>点击地标图片可查看神秘档案</p>'
+            var str = '<p>目前最高记录答对<span>9</span>道题</p><p>点击地标图片可查看神秘档案</p>'
             $('.right_question').css('width',"4rem").html(str);
         } else {
             // 创建swiper容器
