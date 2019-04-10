@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  background-color: #1b1c8a;
   /* 遮罩层 */
 }
 html section.part_01,
@@ -16,8 +17,6 @@ body section.part_02 {
   height: 2.54rem;
   background: url('../images/wbg_02.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.01rem;
 }
 html section.part_02 > a,
 body section.part_02 > a {
@@ -37,8 +36,6 @@ body section.part_03 {
   height: 3.38rem;
   background: url('../images/wbg_03.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.02rem;
 }
 html section.part_04,
 body section.part_04 {
@@ -46,8 +43,6 @@ body section.part_04 {
   height: 4.68rem;
   background: url('../images/wbg_04.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.03rem;
 }
 html section.part_05,
 body section.part_05 {
@@ -58,8 +53,6 @@ body section.part_05 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: -0.05rem;
 }
 html section.part_05 > div,
 body section.part_05 > div {
@@ -89,8 +82,6 @@ body section.part_06 {
   height: 2.54rem;
   background: url('../images/wbg_06.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.07rem;
 }
 html section.part_07,
 body section.part_07 {
@@ -98,8 +89,6 @@ body section.part_07 {
   height: 3.86rem;
   background: url('../images/wbg_07.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.09rem;
 }
 html section.part_08,
 body section.part_08 {
@@ -110,8 +99,6 @@ body section.part_08 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: -0.11rem;
 }
 html section.part_08 > div,
 body section.part_08 > div {
@@ -141,8 +128,6 @@ body section.part_09 {
   height: 4.1rem;
   background: url('../images/wbg_09.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.2rem;
 }
 html section.part_10,
 body section.part_10 {
@@ -150,8 +135,6 @@ body section.part_10 {
   height: 4.3rem;
   background: url('../images/wbg_10.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.22rem;
 }
 html section.part_11,
 body section.part_11 {
@@ -159,8 +142,6 @@ body section.part_11 {
   height: 1.8rem;
   background: url('../images/wbg_11.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.24rem;
 }
 html section.part_12,
 body section.part_12 {
@@ -169,7 +150,6 @@ body section.part_12 {
   background: url('../images/wbg_12.png') no-repeat;
   background-size: cover;
   position: relative;
-  top: -0.26rem;
 }
 html section.part_12 > div,
 body section.part_12 > div {
@@ -187,8 +167,6 @@ body section.part_12 > div {
 html section.ios_zhankai,
 body section.ios_zhankai {
   display: none;
-  position: relative;
-  top: -0.06rem;
 }
 html section.ios_zhankai > div:nth-child(1),
 body section.ios_zhankai > div:nth-child(1) {
@@ -197,7 +175,7 @@ body section.ios_zhankai > div:nth-child(1) {
   background: url('../images/ios_02.png') no-repeat;
   background-size: cover;
   position: relative;
-  top: -0.02rem;
+  top: -0.04rem;
 }
 html section.ios_zhankai > div:nth-child(2),
 body section.ios_zhankai > div:nth-child(2) {
@@ -206,7 +184,7 @@ body section.ios_zhankai > div:nth-child(2) {
   background: url('../images/ios_03.png') no-repeat;
   background-size: cover;
   position: relative;
-  top: -0.03rem;
+  top: -0.05rem;
 }
 html section.ios_zhankai > div:nth-child(3),
 body section.ios_zhankai > div:nth-child(3) {
@@ -215,13 +193,11 @@ body section.ios_zhankai > div:nth-child(3) {
   background: url('../images/ios_04.png') no-repeat;
   background-size: cover;
   position: relative;
-  top: -0.02rem;
+  top: -0.07rem;
 }
 html section.android_zhankai,
 body section.android_zhankai {
   display: none;
-  position: relative;
-  top: -0.11rem;
 }
 html section.android_zhankai > div:nth-child(1),
 body section.android_zhankai > div:nth-child(1) {
@@ -229,8 +205,6 @@ body section.android_zhankai > div:nth-child(1) {
   height: 4.6rem;
   background: url('../images/android_02.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.02rem;
 }
 html section.android_zhankai > div:nth-child(2),
 body section.android_zhankai > div:nth-child(2) {
@@ -238,8 +212,6 @@ body section.android_zhankai > div:nth-child(2) {
   height: 3.2rem;
   background: url('../images/android_03.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.03rem;
 }
 html section.android_zhankai > div:nth-child(3),
 body section.android_zhankai > div:nth-child(3) {
@@ -247,8 +219,6 @@ body section.android_zhankai > div:nth-child(3) {
   height: 2.7rem;
   background: url('../images/android_04.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.04rem;
 }
 html section.android_zhankai > div:nth-child(4),
 body section.android_zhankai > div:nth-child(4) {
@@ -256,8 +226,6 @@ body section.android_zhankai > div:nth-child(4) {
   height: 3.4rem;
   background: url('../images/android_05.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.06rem;
 }
 html section.android_zhankai > div:nth-child(5),
 body section.android_zhankai > div:nth-child(5) {
@@ -265,8 +233,6 @@ body section.android_zhankai > div:nth-child(5) {
   height: 2.59rem;
   background: url('../images/android_06.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -0.08rem;
 }
 html section.tc,
 body section.tc {
