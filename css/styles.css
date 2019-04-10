@@ -1,318 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 html,
 body {
   height: 100%;
-  background-color: #1b1c8a;
+  background-color: #333;
   /* 遮罩层 */
 }
 html section.part_01,
 body section.part_01 {
   width: 7.5rem;
-  height: 3.1rem;
-  background: url('../images/wbg_01.png') no-repeat;
+  height: 3.92rem;
+  background: url('../images/bg_01.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.part_01 > div,
+body section.part_01 > div {
+  width: 6.5rem;
+  height: 3rem;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -0.45rem;
+  z-index: 1;
+}
+html section.part_01 > div.ka_zuanshi,
+body section.part_01 > div.ka_zuanshi {
+  background: url('../images/ka_zuanshi.png') no-repeat;
+  background-size: cover;
+}
+html section.part_01 > div.ka_baijin,
+body section.part_01 > div.ka_baijin {
+  background: url('../images/ka_baijin.png') no-repeat;
+  background-size: cover;
+}
+html section.part_01 > div.ka_jin,
+body section.part_01 > div.ka_jin {
+  background: url('../images/ka_jin.png') no-repeat;
+  background-size: cover;
+}
+html section.part_01 > div.ka_yin,
+body section.part_01 > div.ka_yin {
+  background: url('../images/ka_yin.png') no-repeat;
+  background-size: cover;
+}
+html section.part_01 > div > div,
+body section.part_01 > div > div {
+  width: 1.45rem;
+  height: 2.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+html section.part_01 > div > div > a,
+body section.part_01 > div > div > a {
+  display: inline-block;
+}
+html section.part_01 > div > div > a:nth-child(1),
+body section.part_01 > div > div > a:nth-child(1) {
+  width: 1.45rem;
+  height: .47rem;
+  background: url('../images/my.png') no-repeat;
+  background-size: cover;
+}
+html section.part_01 > div > div > a:nth-child(2),
+body section.part_01 > div > div > a:nth-child(2) {
+  width: .98rem;
+  height: .73rem;
+  background: url('../images/darao.png') no-repeat;
   background-size: cover;
 }
 html section.part_02,
 body section.part_02 {
   width: 7.5rem;
-  height: 2.54rem;
-  background: url('../images/wbg_02.png') no-repeat;
+  height: 2.63rem;
+  background: url('../images/bg_02.png') no-repeat;
   background-size: cover;
 }
-html section.part_02 > a,
-body section.part_02 > a {
-  position: fixed;
-  top: 3.53rem;
-  right: .19rem;
-  display: inline-block;
-  width: 1.32rem;
-  height: 1.32rem;
-  background: url('../images/kaitong.png') no-repeat;
+html section.part_02 > div,
+body section.part_02 > div {
+  width: 7.5rem;
+  height: 2.48rem;
+  background: url('../images/bg_02_02.png') no-repeat;
   background-size: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 2;
+}
+html section.part_02 > div > ul,
+body section.part_02 > div > ul {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: .5rem;
+  width: 6.5rem;
+}
+html section.part_02 > div > ul li > a,
+body section.part_02 > div > ul li > a {
+  display: inline-block;
+  width: 1.18rem;
+  height: 1.29rem;
+  background: url('../images/icon_01.png') no-repeat;
+  background-size: cover;
+}
+html section.part_02 > div > ul li:nth-child(1) > a,
+body section.part_02 > div > ul li:nth-child(1) > a {
+  background-position: 0 0;
+}
+html section.part_02 > div > ul li:nth-child(2) > a,
+body section.part_02 > div > ul li:nth-child(2) > a {
+  background-position: -1.36rem 0;
+}
+html section.part_02 > div > ul li:nth-child(3) > a,
+body section.part_02 > div > ul li:nth-child(3) > a {
+  background-position: -2.72rem 0;
+}
+html section.part_02 > div > ul li:nth-child(4) > a,
+body section.part_02 > div > ul li:nth-child(4) > a {
+  background-position: -4.08rem 0;
+}
+html section.part_02 > div > ul li:nth-child(5) > a,
+body section.part_02 > div > ul li:nth-child(5) > a {
+  background-position: -5.44rem 0;
 }
 html section.part_03,
 body section.part_03 {
   width: 7.5rem;
-  height: 3.38rem;
-  background: url('../images/wbg_03.png') no-repeat;
+  height: 4.82rem;
+  background: url('../images/bg_03.png') no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: .18rem;
+}
+html section.part_03 > div,
+body section.part_03 > div {
+  width: 5.90rem;
+  height: .29rem;
+  background: url('../images/zgx_01.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+html section.part_03 > ul,
+body section.part_03 > ul {
+  width: 6.66rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: .37rem auto;
+}
+html section.part_03 > ul > li > a,
+body section.part_03 > ul > li > a {
+  display: inline-block;
+  width: 1.98rem;
+  height: 1.59rem;
+  border-radius: .2rem;
+  overflow: hidden;
+  background-color: #fff;
+  border: solid 2px #fcc087;
+}
+html section.part_03 > ul > li:nth-child(1),
+body section.part_03 > ul > li:nth-child(1),
+html section.part_03 > ul > li:nth-child(2),
+body section.part_03 > ul > li:nth-child(2),
+html section.part_03 > ul > li:nth-child(1),
+body section.part_03 > ul > li:nth-child(1) {
+  margin-bottom: .3rem;
+}
+html section.part_03 > ul > li:nth-child(1) > a,
+body section.part_03 > ul > li:nth-child(1) > a {
+  width: 1.94rem;
+  height: 1.56rem;
+  background: url('../images/icon_jichang.png') no-repeat;
+  background-size: cover;
+}
+html section.part_03 > ul > li:nth-child(2) > a,
+body section.part_03 > ul > li:nth-child(2) > a {
+  width: 1.94rem;
+  height: 1.56rem;
+  background: url('../images/icon_mobai.png') no-repeat;
+  background-size: cover;
+}
+html section.part_03 > ul > li:nth-child(3) > a,
+body section.part_03 > ul > li:nth-child(3) > a {
+  width: 1.94rem;
+  height: 1.56rem;
+  background: url('../images/icon_xima.png') no-repeat;
+  background-size: cover;
+}
+html section.part_03 > ul > li:nth-child(4) > a,
+body section.part_03 > ul > li:nth-child(4) > a {
+  background: url('../images/zgx_li_01.png') no-repeat;
   background-size: cover;
 }
 html section.part_04,
 body section.part_04 {
   width: 7.5rem;
-  height: 4.68rem;
-  background: url('../images/wbg_04.png') no-repeat;
+  height: 3.12rem;
+  background: url('../images/bg_04.png') no-repeat;
   background-size: cover;
+}
+html section.part_04 > div > div,
+body section.part_04 > div > div {
+  width: 5.9rem;
+  height: .29rem;
+  background: url('../images/qy_01.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto .4rem;
+}
+html section.part_04 > div > ul,
+body section.part_04 > div > ul {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 6.52rem;
+}
+html section.part_04 > div > ul li > a,
+body section.part_04 > div > ul li > a {
+  display: inline-block;
+  width: 1.18rem;
+  height: 1.72rem;
+  background: url('../images/icon_02.png') no-repeat;
+  background-size: cover;
+}
+html section.part_04 > div > ul li:nth-child(1) > a,
+body section.part_04 > div > ul li:nth-child(1) > a {
+  background-position: 0 0;
+}
+html section.part_04 > div > ul li:nth-child(2) > a,
+body section.part_04 > div > ul li:nth-child(2) > a {
+  background-position: -1.36rem 0;
+}
+html section.part_04 > div > ul li:nth-child(3) > a,
+body section.part_04 > div > ul li:nth-child(3) > a {
+  background-position: -2.72rem 0;
+}
+html section.part_04 > div > ul li:nth-child(4) > a,
+body section.part_04 > div > ul li:nth-child(4) > a {
+  background-position: -4.08rem 0;
+}
+html section.part_04 > div > ul li:nth-child(5) > a,
+body section.part_04 > div > ul li:nth-child(5) > a {
+  background-position: -5.44rem 0;
 }
 html section.part_05,
 body section.part_05 {
   width: 7.5rem;
-  height: 1.4rem;
-  background: url('../images/wbg_05.png') no-repeat;
+  height: 5.22rem;
+  background: url('../images/bg_05.png') no-repeat;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-html section.part_05 > div,
-body section.part_05 > div {
-  width: 6.27rem;
-  height: .99rem;
-  background: url('../images/zhankai.png') no-repeat;
-  background-size: cover;
-  margin: 0 auto;
   position: relative;
 }
-html section.part_05 > div > span,
-body section.part_05 > div > span {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: .56rem;
-  margin: auto;
-  width: .46rem;
-  height: .24rem;
-  background: url('../images/jiantou.png') no-repeat;
+html section.part_05 > div:nth-child(1),
+body section.part_05 > div:nth-child(1) {
+  width: 5.9rem;
+  height: .29rem;
+  background: url('../images/jlb_01.png') no-repeat;
   background-size: cover;
+  margin: 0 auto .4rem;
+}
+html section.part_05 > div:nth-child(3),
+body section.part_05 > div:nth-child(3) {
+  width: 1.21rem;
+  height: .38rem;
+  background: url('../images/liaojie.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: .6rem;
+  bottom: 1rem;
 }
 html section.part_06,
 body section.part_06 {
   width: 7.5rem;
-  height: 2.54rem;
-  background: url('../images/wbg_06.png') no-repeat;
+  height: 4.82rem;
+  background: url('../images/bg_06.png') no-repeat;
   background-size: cover;
+}
+html section.part_06 > div:nth-child(1),
+body section.part_06 > div:nth-child(1) {
+  width: 5.9rem;
+  height: .28rem;
+  background: url('../images/jfd_01.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto .4rem;
+}
+html section.part_06 > div:nth-child(2),
+body section.part_06 > div:nth-child(2) {
+  width: 6.9rem;
+  height: 3.3rem;
+  background: url('../images/jfd_02.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+html section.part_06 > div:nth-child(2) > a,
+body section.part_06 > div:nth-child(2) > a {
+  display: inline-block;
+  width: 1.51rem;
+  height: 3.29rem;
+}
+html section.part_06 > div:nth-child(2) > ul,
+body section.part_06 > div:nth-child(2) > ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: absolute;
+  left: 1.6rem;
+  top: .83rem;
+}
+html section.part_06 > div:nth-child(2) > ul li > a,
+body section.part_06 > div:nth-child(2) > ul li > a {
+  display: inline-block;
+  width: 1.58rem;
+  height: 1.74rem;
+  border-radius: .2rem;
+  overflow: hidden;
+  background-color: #fff;
+  border: solid 1px #fcc087;
+  box-shadow: 2px 2px 2px #888888;
+}
+html section.part_06 > div:nth-child(2) > ul li:nth-child(1) > a,
+body section.part_06 > div:nth-child(2) > ul li:nth-child(1) > a {
+  width: 1.58rem;
+  height: 1.74rem;
+  background: url('../images/zgx_li_01.png') no-repeat;
+  background-size: cover;
+}
+html section.part_06 > div:nth-child(2) > ul li:nth-child(2),
+body section.part_06 > div:nth-child(2) > ul li:nth-child(2) {
+  margin: 0 .13rem;
+}
+html section.part_06 > div:nth-child(2) > div,
+body section.part_06 > div:nth-child(2) > div {
+  width: 1.21rem;
+  height: .39rem;
+  background: url('../images/jlb_02.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: .2rem;
+  bottom: .17rem;
 }
 html section.part_07,
 body section.part_07 {
   width: 7.5rem;
-  height: 3.86rem;
-  background: url('../images/wbg_07.png') no-repeat;
+  height: 5.2rem;
+  background: url('../images/bg_07.png') no-repeat;
   background-size: cover;
+}
+html section.part_07 > div:nth-child(1),
+body section.part_07 > div:nth-child(1) {
+  width: 5.9rem;
+  height: .28rem;
+  background: url('../images/yhx_01.png') no-repeat;
+  background-size: cover;
+  margin: 0 auto .4rem;
+}
+html section.part_07 > div:nth-child(2),
+body section.part_07 > div:nth-child(2) {
+  width: 6.9rem;
+  height: 4.17rem;
+  border: solid 1px #ecb480;
+  border-radius: .1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+html section.part_07 > div:nth-child(2) > ul,
+body section.part_07 > div:nth-child(2) > ul {
+  width: 5.31rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+html section.part_07 > div:nth-child(2) > ul > li,
+body section.part_07 > div:nth-child(2) > ul > li {
+  width: 2.32rem;
+  height: 3.01rem;
+}
+html section.part_07 > div:nth-child(2) > ul > li:nth-child(1),
+body section.part_07 > div:nth-child(2) > ul > li:nth-child(1) {
+  background: url('../images/yhx_02.png') no-repeat;
+  background-size: cover;
+}
+html section.part_07 > div:nth-child(2) > ul > li:nth-child(2),
+body section.part_07 > div:nth-child(2) > ul > li:nth-child(2) {
+  background: url('../images/yhx_03.png') no-repeat;
+  background-size: cover;
+}
+html section.part_07 > div:nth-child(2) > a,
+body section.part_07 > div:nth-child(2) > a {
+  color: #f1d1be;
+  margin-top: .37rem;
+  text-decoration: underline;
 }
 html section.part_08,
 body section.part_08 {
   width: 7.5rem;
-  height: 1.4rem;
-  background: url('../images/wbg_08.png') no-repeat;
+  height: 2.99rem;
+  background: url('../images/bg_08.png') no-repeat;
   background-size: cover;
+}
+html .lunbo > div:nth-child(1),
+body .lunbo > div:nth-child(1) {
+  width: 6.5rem;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
-html section.part_08 > div,
-body section.part_08 > div {
-  width: 6.27rem;
-  height: .99rem;
-  background: url('../images/zhankai.png') no-repeat;
-  background-size: cover;
   margin: 0 auto;
-  position: relative;
 }
-html section.part_08 > div > span,
-body section.part_08 > div > span {
-  display: inline-block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: .56rem;
-  margin: auto;
-  width: .46rem;
-  height: .24rem;
-  background: url('../images/jiantou.png') no-repeat;
-  background-size: cover;
-}
-html section.part_09,
-body section.part_09 {
-  width: 7.5rem;
-  height: 4.1rem;
-  background: url('../images/wbg_09.png') no-repeat;
-  background-size: cover;
-}
-html section.part_10,
-body section.part_10 {
-  width: 7.5rem;
-  height: 4.3rem;
-  background: url('../images/wbg_10.png') no-repeat;
-  background-size: cover;
-}
-html section.part_11,
-body section.part_11 {
-  width: 7.5rem;
-  height: 1.8rem;
-  background: url('../images/wbg_11.png') no-repeat;
-  background-size: cover;
-}
-html section.part_12,
-body section.part_12 {
-  width: 7.5rem;
-  height: 2.18rem;
-  background: url('../images/wbg_12.png') no-repeat;
-  background-size: cover;
-  position: relative;
-}
-html section.part_12 > div,
-body section.part_12 > div {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 6.15rem;
-  height: 1.42rem;
-  background: url('../images/mianfei.png') no-repeat;
-  background-size: cover;
-  margin: auto;
-}
-html section.ios_zhankai,
-body section.ios_zhankai {
-  display: none;
-}
-html section.ios_zhankai > div:nth-child(1),
-body section.ios_zhankai > div:nth-child(1) {
-  width: 7.5rem;
-  height: 4.53rem;
-  background: url('../images/ios_02.png') no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -0.04rem;
-}
-html section.ios_zhankai > div:nth-child(2),
-body section.ios_zhankai > div:nth-child(2) {
-  width: 7.5rem;
-  height: 3.3rem;
-  background: url('../images/ios_03.png') no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -0.05rem;
-}
-html section.ios_zhankai > div:nth-child(3),
-body section.ios_zhankai > div:nth-child(3) {
-  width: 7.5rem;
-  height: 3.19rem;
-  background: url('../images/ios_04.png') no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -0.07rem;
-}
-html section.android_zhankai,
-body section.android_zhankai {
-  display: none;
-}
-html section.android_zhankai > div:nth-child(1),
-body section.android_zhankai > div:nth-child(1) {
-  width: 7.5rem;
-  height: 4.6rem;
-  background: url('../images/android_02.png') no-repeat;
-  background-size: cover;
-}
-html section.android_zhankai > div:nth-child(2),
-body section.android_zhankai > div:nth-child(2) {
-  width: 7.5rem;
-  height: 3.2rem;
-  background: url('../images/android_03.png') no-repeat;
-  background-size: cover;
-}
-html section.android_zhankai > div:nth-child(3),
-body section.android_zhankai > div:nth-child(3) {
-  width: 7.5rem;
-  height: 2.7rem;
-  background: url('../images/android_04.png') no-repeat;
-  background-size: cover;
-}
-html section.android_zhankai > div:nth-child(4),
-body section.android_zhankai > div:nth-child(4) {
-  width: 7.5rem;
-  height: 3.4rem;
-  background: url('../images/android_05.png') no-repeat;
-  background-size: cover;
-}
-html section.android_zhankai > div:nth-child(5),
-body section.android_zhankai > div:nth-child(5) {
-  width: 7.5rem;
-  height: 2.59rem;
-  background: url('../images/android_06.png') no-repeat;
-  background-size: cover;
-}
-html section.tc,
-body section.tc {
-  position: fixed;
-  top: 1.8rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  z-index: 300;
-}
-html section.tc.success,
-body section.tc.success {
-  display: none;
-  width: 7.21rem;
-  height: 5.06rem;
-  background: url('../images/tc_suceese.png') no-repeat;
-  background-size: cover;
-}
-html section.tc.success > a,
-body section.tc.success > a {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: .65rem;
-  margin: auto;
-  display: inline-block;
-  width: 4.66rem;
-  height: 1.14rem;
-  background: url('../images/tc_subtn.png') no-repeat;
-  background-size: cover;
-}
-html section.tc.progress,
-body section.tc.progress {
-  display: none;
-  width: 7.26rem;
-  height: 5.11rem;
-  background: url('../images/tc_pro.png') no-repeat;
-  background-size: cover;
-}
-html section.tc.fail,
-body section.tc.fail {
-  display: none;
-  width: 7.21rem;
-  height: 5.06rem;
-  background: url('../images/tc_fail.png') no-repeat;
-  background-size: cover;
-}
-html section.tc.fail > div,
-body section.tc.fail > div {
-  position: relative;
-}
-html section.tc.fail > div:nth-child(1),
-body section.tc.fail > div:nth-child(1) {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 1.2rem;
-  width: 4.5rem;
-  height: 1.11rem;
-  background: url('../images/failfont.png') no-repeat;
-  background-size: cover;
-}
-html section.tc.fail > div:nth-child(2),
-body section.tc.fail > div:nth-child(2) {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 2.7rem;
-  width: 4.5rem;
-  height: 1rem;
-  text-align: center;
-  overflow: hidden;
-  font-size: .24rem;
-  color: #fff;
+html .lunbo > div:nth-child(1) > p,
+body .lunbo > div:nth-child(1) > p {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  position: relative;
+}
+html .lunbo > div:nth-child(1) > p > span:nth-child(1),
+body .lunbo > div:nth-child(1) > p > span:nth-child(1) {
+  font-size: .3rem;
+  color: #dcc198;
+}
+html .lunbo > div:nth-child(1) > p > span.act,
+body .lunbo > div:nth-child(1) > p > span.act {
+  display: inline-block;
+  width: .82rem;
+  height: .12rem;
+  background: url('../images/aline.png') no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: .3rem;
+  opacity: 0.9;
+}
+html .lunbo > div:nth-child(2),
+body .lunbo > div:nth-child(2) {
+  width: 6.5rem;
+  border-radius: .1rem;
+  margin: .2rem auto 0;
+  overflow: hidden;
+}
+html .lunbo > div:nth-child(2) > div.bg,
+body .lunbo > div:nth-child(2) > div.bg {
+  width: 6.5rem;
+  height: 3rem;
+  background: #fff;
 }
 html section.mask,
 body section.mask {
@@ -322,14 +470,53 @@ body section.mask {
   background-color: rgba(0, 0, 0, 0.8);
   z-index: 100;
 }
-html .xuanzhuan,
-body .xuanzhuan {
-  transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  /* IE 9 */
-  -moz-transform: rotate(180deg);
-  /* Firefox */
-  -webkit-transform: rotate(180deg);
-  /* Safari 和 Chrome */
-  -o-transform: rotate(180deg);
+html .bg,
+body .bg {
+  display: none;
+}
+html .bg_active,
+body .bg_active {
+  display: block !important;
+}
+html .swiper-container,
+body .swiper-container {
+  height: 100%;
+}
+html .swiper-pagination,
+body .swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: .3s opacity;
+  -o-transition: .3s opacity;
+  transition: .3s opacity;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+  left: 0;
+  right: 0;
+  margin: .2rem auto;
+}
+html .swiper-pagination > span:nth-child(2),
+body .swiper-pagination > span:nth-child(2) {
+  margin: 0 .1rem;
+}
+html .swiper-pagination-bullet-active,
+body .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #777580;
+}
+html .swiper-pagination-bullet,
+body .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #3c3949;
+}
+html .swiper-slide > a,
+body .swiper-slide > a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
 }
