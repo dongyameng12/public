@@ -19,8 +19,6 @@ body section.part_02 {
   height: 3.4rem;
   background: url('../images/bg_02.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -1px;
 }
 html section.part_03,
 body section.part_03 {
@@ -28,8 +26,6 @@ body section.part_03 {
   height: 2.7rem;
   background: url('../images/bg_03.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -1px;
 }
 html section.part_04,
 body section.part_04 {
@@ -37,8 +33,6 @@ body section.part_04 {
   height: 2.2rem;
   background: url('../images/bg_04.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -1px;
 }
 html section.part_05,
 body section.part_05 {
@@ -47,7 +41,6 @@ body section.part_05 {
   background: url('../images/bg_05.png') no-repeat;
   background-size: cover;
   position: relative;
-  top: -1px;
 }
 html section.part_05 > a,
 body section.part_05 > a {
@@ -68,8 +61,6 @@ body section.part_06 {
   flex: 1;
   background: url('../images/bg_05.png') no-repeat;
   background-size: cover;
-  position: relative;
-  top: -1px;
 }
 html section.mask,
 body section.mask {
