@@ -129,22 +129,18 @@ body section.part_02 > div > ul li > a {
 }
 html section.part_02 > div > ul li:nth-child(1) > a,
 body section.part_02 > div > ul li:nth-child(1) > a {
-  background-position: 0 0;
+  background-position: -1.36rem 0;
 }
 html section.part_02 > div > ul li:nth-child(2) > a,
 body section.part_02 > div > ul li:nth-child(2) > a {
-  background-position: -1.36rem 0;
+  background-position: -2.72rem 0;
 }
 html section.part_02 > div > ul li:nth-child(3) > a,
 body section.part_02 > div > ul li:nth-child(3) > a {
-  background-position: -2.72rem 0;
+  background-position: -4.08rem 0;
 }
 html section.part_02 > div > ul li:nth-child(4) > a,
 body section.part_02 > div > ul li:nth-child(4) > a {
-  background-position: -4.08rem 0;
-}
-html section.part_02 > div > ul li:nth-child(5) > a,
-body section.part_02 > div > ul li:nth-child(5) > a {
   background-position: -5.44rem 0;
 }
 html section.part_03,
