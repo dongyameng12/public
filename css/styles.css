@@ -49,15 +49,6 @@ body section.part_05 {
   position: relative;
   top: -1px;
 }
-html section.part_05,
-body section.part_05 {
-  width: 7.5rem;
-  flex: 1;
-  background: url('../images/bg_05.png') no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -1px;
-}
 html section.part_05 > a,
 body section.part_05 > a {
   position: absolute;
@@ -70,6 +61,15 @@ body section.part_05 > a {
   height: .92rem;
   background: url('../images/btn.png') no-repeat;
   background-size: cover;
+}
+html section.part_06,
+body section.part_06 {
+  width: 7.5rem;
+  flex: 1;
+  background: url('../images/bg_05.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -1px;
 }
 html section.mask,
 body section.mask {
