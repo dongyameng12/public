@@ -174,7 +174,7 @@
     border-radius: .2rem;
     overflow: hidden;
     background-color: #fff;
-    border: solid 2px #fcc087;
+    border: solid 1px #fcc087;
   }
   html section.part_03 > ul > li:nth-child(1),
   body section.part_03 > ul > li:nth-child(1),
@@ -186,29 +186,29 @@
   }
   html section.part_03 > ul > li:nth-child(1) > a,
   body section.part_03 > ul > li:nth-child(1) > a {
-    width: 1.94rem;
-    height: 1.56rem;
+    width: 1.98rem;
+    height: 1.58rem;
     background: url('../images/icon_jichang.png') no-repeat;
     background-size: cover;
   }
   html section.part_03 > ul > li:nth-child(2) > a,
   body section.part_03 > ul > li:nth-child(2) > a {
-    width: 1.94rem;
-    height: 1.56rem;
+    width: 1.98rem;
+    height: 1.58rem;
     background: url('../images/icon_mobai.png') no-repeat;
     background-size: cover;
   }
   html section.part_03 > ul > li:nth-child(3) > a,
   body section.part_03 > ul > li:nth-child(3) > a {
-    width: 1.94rem;
-    height: 1.56rem;
+    width: 1.98rem;
+    height: 1.58rem;
     background: url('../images/icon_xima.png') no-repeat;
     background-size: cover;
   }
   html section.part_03 > ul > li:nth-child(4) > a,
   body section.part_03 > ul > li:nth-child(4) > a {
-    width: 1.94rem;
-    height: 1.56rem;
+    width: 1.98rem;
+    height: 1.58rem;
     background: url('../images/zgx_li_01.png') no-repeat;
     background-size: cover;
   }
@@ -325,31 +325,41 @@
     justify-content: space-between;
     margin: 0 auto;
     position: absolute;
-    left: 1.6rem;
-    top: .83rem;
+    left: 1.73rem;
+    top: .95rem;
   }
   html section.part_06 > div:nth-child(2) > ul li > a,
   body section.part_06 > div:nth-child(2) > ul li > a {
     display: inline-block;
-    width: 1.58rem;
+    /* width: 1.58rem;
     height: 1.74rem;
     border-radius: .2rem;
     overflow: hidden;
     background-color: #fff;
     border: solid 1px #fcc087;
-    box-shadow: 2px 2px 2px #888888;
+    box-shadow: 2px 2px 2px #888888; */
   }
   html section.part_06 > div:nth-child(2) > ul li:nth-child(1) > a,
 body section.part_06 > div:nth-child(2) > ul li:nth-child(1) > a {
-  width: 1.58rem;
-  height: 1.74rem;
-  background: url('../images/zgx_li_01.png') no-repeat;
+  width: 1.64rem;
+  height: 1.54rem;
+  background: url('../images/jfd_li_01.png') no-repeat;
   background-size: cover;
 }
-  html section.part_06 > div:nth-child(2) > ul li:nth-child(2),
-  body section.part_06 > div:nth-child(2) > ul li:nth-child(2) {
-    margin: 0 .13rem;
-  }
+html section.part_06 > div:nth-child(2) > ul li:nth-child(2) > a,
+body section.part_06 > div:nth-child(2) > ul li:nth-child(2) > a {
+  width: 1.65rem;
+  height: 1.54rem;
+  background: url('../images/jfd_li_02.png') no-repeat;
+  background-size: cover;
+}
+html section.part_06 > div:nth-child(2) > ul li:nth-child(3) > a,
+body section.part_06 > div:nth-child(2) > ul li:nth-child(3) > a {
+  width: 1.65rem;
+  height: 1.54rem;
+  background: url('../images/jfd_li_03.png') no-repeat;
+  background-size: cover;
+}
   html section.part_06 > div:nth-child(2) > div,
   body section.part_06 > div:nth-child(2) > div {
     width: 1.21rem;
@@ -397,18 +407,19 @@ body section.part_06 > div:nth-child(2) > ul li:nth-child(1) > a {
     display: flex;
     justify-content: space-between;
   }
-  html section.add > div:nth-child(2) > ul > li,
-  body section.add > div:nth-child(2) > ul > li {
+  html section.add > div:nth-child(2) > ul > li >a,
+  body section.add > div:nth-child(2) > ul > li>a {
+    display: inline-block;
     width: 2.55rem;
     height: 1.94rem;
   }
-  html section.add > div:nth-child(2) > ul > li:nth-child(1),
-  body section.add > div:nth-child(2) > ul > li:nth-child(1) {
+  html section.add > div:nth-child(2) > ul > li:nth-child(1)>a,
+  body section.add > div:nth-child(2) > ul > li:nth-child(1)>a {
     background: url('../images/no_icon_01.png') no-repeat;
     background-size: cover;
   }
-  html section.add > div:nth-child(2) > ul > li:nth-child(2),
-  body section.add > div:nth-child(2) > ul > li:nth-child(2) {
+  html section.add > div:nth-child(2) > ul > li:nth-child(2)>a,
+  body section.add > div:nth-child(2) > ul > li:nth-child(2)>a {
     background: url('../images/no_icon_02.png') no-repeat;
     background-size: cover;
   }
@@ -583,6 +594,55 @@ body section.part_06 > div:nth-child(2) > ul li:nth-child(1) > a {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
-  
+  html .lb_si_01,
+body .lb_si_01 {
+  background: url('../images/lb_si_01.png') no-repeat;
+  background-size: cover;
+}
+html .lb_wq_01,
+body .lb_wq_01 {
+  background: url('../images/lb_wq_01.png') no-repeat;
+  background-size: cover;
+}
+html .lb_wq_02,
+body .lb_wq_02 {
+  background: url('../images/lb_wq_02.png') no-repeat;
+  background-size: cover;
+}
+html .lb_wq_03,
+body .lb_wq_03 {
+  background: url('../images/lb_wq_03.png') no-repeat;
+  background-size: cover;
+}
+html .lb_wq_04,
+body .lb_wq_04 {
+  background: url('../images/lb_wq_04.png') no-repeat;
+  background-size: cover;
+}
+html .lb_wq_05,
+body .lb_wq_05 {
+  background: url('../images/lb_wq_05.png') no-repeat;
+  background-size: cover;
+}
+html .lb_qq_01,
+body .lb_qq_01 {
+  background: url('../images/lb_qq_01.png') no-repeat;
+  background-size: cover;
+}
+html .lb_qq_02,
+body .lb_qq_02 {
+  background: url('../images/lb_qq_02.png') no-repeat;
+  background-size: cover;
+}
+html .lb_qq_03,
+body .lb_qq_03 {
+  background: url('../images/lb_qq_03.png') no-repeat;
+  background-size: cover;
+}
+html .lb_qq_04,
+body .lb_qq_04 {
+  background: url('../images/lb_qq_04.png') no-repeat;
+  background-size: cover;
+}
