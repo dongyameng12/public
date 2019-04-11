@@ -1,79 +1,75 @@
 html,
 body {
-  background-color: #225cbc;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   /* 遮罩层 */
 }
 html section.part_01,
 body section.part_01 {
   width: 7.5rem;
-  height: 4.48rem;
+  height: 3.8rem;
   background: url('../images/bg_01.png') no-repeat;
   background-size: cover;
 }
 html section.part_02,
 body section.part_02 {
   width: 7.5rem;
-  height: 1.46rem;
+  height: 3.4rem;
   background: url('../images/bg_02.png') no-repeat;
   background-size: cover;
+  position: relative;
+  top: -1px;
 }
 html section.part_03,
 body section.part_03 {
   width: 7.5rem;
-  height: 4.41rem;
+  height: 2.7rem;
   background: url('../images/bg_03.png') no-repeat;
   background-size: cover;
-}
-html section.part_03 > div,
-body section.part_03 > div {
-  width: 7.12rem;
-  height: 4.68rem;
-  background: url('../images/banner_01.png') no-repeat;
-  background-size: cover;
   position: relative;
-  top: -0.15rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-html section.part_03 > div > a,
-body section.part_03 > div > a {
-  display: inline-block;
-  width: 2.23rem;
-  height: .86rem;
-  background: url('../images/jion.png') no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 3.38rem;
-  right: .5rem;
+  top: -1px;
 }
 html section.part_04,
 body section.part_04 {
   width: 7.5rem;
-  height: 4.89rem;
+  height: 2.2rem;
   background: url('../images/bg_04.png') no-repeat;
   background-size: cover;
+  position: relative;
+  top: -1px;
 }
-html section.part_04 > div,
-body section.part_04 > div {
-  width: 7.12rem;
-  height: 4.68rem;
-  background: url('../images/banner_02.png') no-repeat;
+html section.part_05,
+body section.part_05 {
+  width: 7.5rem;
+  height: 1.24rem;
+  background: url('../images/bg_05.png') no-repeat;
   background-size: cover;
   position: relative;
-  margin: 0 auto;
+  top: -1px;
 }
-html section.part_04 > div > a,
-body section.part_04 > div > a {
-  display: inline-block;
-  width: 2.23rem;
-  height: .86rem;
-  background: url('../images/jion.png') no-repeat;
+html section.part_05,
+body section.part_05 {
+  width: 7.5rem;
+  flex: 1;
+  background: url('../images/bg_05.png') no-repeat;
   background-size: cover;
+  position: relative;
+  top: -1px;
+}
+html section.part_05 > a,
+body section.part_05 > a {
   position: absolute;
-  top: 3.38rem;
-  right: .5rem;
+  left: 0;
+  right: 0;
+  top: .2rem;
+  margin: auto;
+  display: inline-block;
+  width: 3.82rem;
+  height: .92rem;
+  background: url('../images/btn.png') no-repeat;
+  background-size: cover;
 }
 html section.mask,
 body section.mask {
