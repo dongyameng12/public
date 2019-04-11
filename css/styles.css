@@ -9,57 +9,63 @@ body {
 html section.part_01,
 body section.part_01 {
   width: 7.5rem;
-  height: 3.8rem;
+  height: 5.94rem;
   background: url('../images/bg_01.png') no-repeat;
   background-size: cover;
 }
 html section.part_02,
 body section.part_02 {
   width: 7.5rem;
-  height: 3.4rem;
+  flex: 1;
   background: url('../images/bg_02.png') no-repeat;
-  background-size: cover;
-}
-html section.part_03,
-body section.part_03 {
-  width: 7.5rem;
-  height: 2.7rem;
-  background: url('../images/bg_03.png') no-repeat;
-  background-size: cover;
-}
-html section.part_04,
-body section.part_04 {
-  width: 7.5rem;
-  height: 2.2rem;
-  background: url('../images/bg_04.png') no-repeat;
-  background-size: cover;
-}
-html section.part_05,
-body section.part_05 {
-  width: 7.5rem;
-  height: 1.24rem;
-  background: url('../images/bg_05.png') no-repeat;
   background-size: cover;
   position: relative;
 }
-html section.part_05 > a,
-body section.part_05 > a {
-  position: absolute;
+html section.part_02 > div:nth-child(1),
+body section.part_02 > div:nth-child(1) {
+  width: 5.15rem;
+  height: 3.86rem;
+  background: url('../images/list.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -0.29rem;
   left: 0;
   right: 0;
-  top: .2rem;
   margin: auto;
+}
+html section.part_02 > div:nth-child(2),
+body section.part_02 > div:nth-child(2) {
+  width: 6.37rem;
+  height: .87rem;
+  background: url('../images/jieshao_01.png') no-repeat;
+  background-size: cover;
+  margin-left: .44rem;
+  position: relative;
+  top: -0.29rem;
+}
+html section.part_02 > div:nth-child(3),
+body section.part_02 > div:nth-child(3) {
+  width: 6.51rem;
+  height: 1.63rem;
+  background: url('../images/jieshao_02.png') no-repeat;
+  background-size: cover;
+  margin-left: .44rem;
+  margin-top: .25rem;
+  position: relative;
+  top: -0.29rem;
+}
+html section.part_02 > div:nth-child(4),
+body section.part_02 > div:nth-child(4) {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+html section.part_02 > div:nth-child(4) > a,
+body section.part_02 > div:nth-child(4) > a {
   display: inline-block;
   width: 3.82rem;
   height: .92rem;
   background: url('../images/btn.png') no-repeat;
-  background-size: cover;
-}
-html section.part_06,
-body section.part_06 {
-  width: 7.5rem;
-  flex: 1;
-  background: url('../images/bg_05.png') no-repeat;
   background-size: cover;
 }
 html section.mask,
