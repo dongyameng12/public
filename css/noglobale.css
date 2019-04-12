@@ -672,3 +672,50 @@ body .lb_qq_04 {
   background: url('../images/lb_qq_04.png') no-repeat;
   background-size: cover;
 }
+html section.pop,
+body section.pop {
+  position: fixed;
+  z-index: 201;
+  height: 7.5rem;
+  width: 5.68rem;
+  top: 1.8rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+html section.pop> div,
+body section.pop > div {
+  width: 5.68rem;
+  height: 6.21rem;
+  background: url(../images/pop_01.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: .26rem;
+  color: #dca85e;
+}
+html section.pop > div > div,
+body section.pop> div > div {
+  position: absolute;
+  top: 1.39rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /* width: 3.94rem; */
+  height: 2.01rem;
+  line-height: .45rem;
+  text-align: center;
+}
+html section.pop> div > span,
+body section.pop > div > span {
+  display: inline-block;
+  width: 3.94rem;
+  height: .95rem;
+  background: url(../images/sure_btn.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: .62rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
