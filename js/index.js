@@ -13,6 +13,9 @@
     (document, window);
 
 $(document).ready(function () {
+    console.log($(window).height());
+    console.log($(document).height())
+    console.log($(document.body).height())
 });
 //显示遮罩层
 function showMask() {
