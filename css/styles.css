@@ -1,8 +1,85 @@
 html,
 body {
-  background-color: #b7ea9d;
+  background: -webkit-radial-gradient(circle, #efcea5, #f1bb7f);
+  /* Safari 5.1 - 6.0 */
+  background: -o-radial-gradient(circle, #efcea5, #f1bb7f);
+  /* Opera 11.6 - 12.0 */
+  background: -moz-radial-gradient(circle, #efcea5, #f1bb7f);
+  /* Firefox 3.6 - 15 */
+  background: radial-gradient(circle, #efcea5, #f1bb7f);
+  /* 标准的语法 */
   height: 100%;
   /* 遮罩层 */
+}
+html section.home > div:nth-child(1),
+body section.home > div:nth-child(1) {
+  width: 7.5rem;
+  height: 2.71rem;
+  background: url('../images/home_top.png') no-repeat;
+  background-size: cover;
+  position: relative;
+}
+html section.home > div:nth-child(1) > a,
+body section.home > div:nth-child(1) > a {
+  display: inline-block;
+  position: absolute;
+  top: .2rem;
+  right: 0;
+  width: 1.6rem;
+  height: .82rem;
+  background: url('../images/rule.png') no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(2),
+body section.home > div:nth-child(2) {
+  position: relative;
+  z-index: 1;
+}
+html section.home > div:nth-child(2) > div:nth-child(1),
+body section.home > div:nth-child(2) > div:nth-child(1) {
+  width: 7.5rem;
+  height: 9.38rem;
+}
+html section.home > div:nth-child(2) > div:nth-child(2),
+body section.home > div:nth-child(2) > div:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 5.5rem;
+  width: 1.63rem;
+  height: 2.1rem;
+  background: url('../images/home_left.png') no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(2) > div:nth-child(3),
+body section.home > div:nth-child(2) > div:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 4rem;
+  width: .91rem;
+  height: 1.44rem;
+  background: url('../images/home_rig.png') no-repeat;
+  background-size: cover;
+}
+html section.home > div:nth-child(3),
+body section.home > div:nth-child(3) {
+  width: 4.26rem;
+  height: 1.18rem;
+  background: url('../images/startx.png') no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+html section.home > div:nth-child(4),
+body section.home > div:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  width: 7.5rem;
+  height: 2.22rem;
+  background: url('../images/home_bott.png') no-repeat;
+  background-size: cover;
 }
 html section.mask,
 body section.mask {

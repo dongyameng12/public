@@ -7,89 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>北京移动</title>
     <link rel="stylesheet" href="css/reset.min.css">
-    <!-- <link rel="stylesheet/less" href="css/styles.less"> -->
+    <link rel="stylesheet/less" href="css/styles.less">
     <link rel="stylesheet" href="css/styles.css">
     <!-- <script src="js/less-1.7.0.min.js"></script> -->
     <script src="js/jquery-1.10.1.min.js"></script>
-    <script src="js/modernizr.2.5.3.min.js"></script>
 </head>
-
 <body>
-    <div class="flipbook-viewport">
-        <div class="container">
-            <div class="flipbook">
-                <div style="background-image:url(images/01.jpg)"></div>
-                <div style="background-image:url(images/02.jpg)"></div>
-                <div style="background-image:url(images/03.jpg)"></div>
-                <div style="background-image:url(images/04.jpg)"></div>
-                <div style="background-image:url(images/05.jpg)"></div>
-                <div style="background-image:url(images/01.jpg)"></div>
-                <div style="background-image:url(images/02.jpg)"></div>
-                <div style="background-image:url(images/03.jpg)"></div>
-                <div style="background-image:url(images/04.jpg)"></div>
-                <div style="background-image:url(images/05.jpg)"></div>
-            </div>
+    <!-- 首页 -->
+    <section class="home">
+        <div><a href="javascript:void(0);"></a></div>
+        <div >
+            <div id="change"></div>
+            <div></div>
+            <div></div>
         </div>
-    </div>
-
-
-    <script type="text/javascript">
-
-        $(function () {
-            //可以设置上一页  及 下一页 跳转指定页
-            // Turn to the page 10
-            //$("#flipbook").turn("page", 10);
-            //$("#flipbook").turn("next");
-            //$("#flipbook").turn("prev");
-            function loadApp() {
-                var w = $(window).width();
-                var h = $(window).height();
-                // var h =300;
-                //判断是否是移动端
-                if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
-                    //书本初始化
-                    $('.flipbook').turn({
-                        width: w,
-                        height: h,//书本的大小
-                        direction: "ltr",//书本翻动方向
-                        elevation: 50, //在转换期间设置页面的标高。
-                        display: "single",//display("double"  "single")  展示一页或者两页，默认double
-                        duration: 1000,// 设置翻页动画持续时间即翻页的快慢，默认600(毫秒)
-                        gradients: true,//翻页阴影
-                        acceleration: true,// 硬件加速，对于触摸设备，一定要设置true
-                        autoCenter: false //是否居中 默认false
-                    });
-                } else {
-                    //书本初始化
-                    $('.flipbook').turn({
-                        width: w,
-                        height: h,
-                        direction: "ltr",
-                        elevation: 50,
-                        display: "double",
-                        duration: 1000,
-                        gradients: true
-                    });
-                    var $pages = $(".page");
-                    if ($pages.length > 0) {
-                        for (var i = 0; i < $pages.length; i++) {
-                            $pages.eq(i).css("width", w / 2);
-                        }
-                    }
-                }
-            }
-            yepnope({
-                test: Modernizr.csstransforms,
-                yep: ['js/turn.js'],
-                nope: ['js/turn.html4.min.js'],
-                both: ['css/styles.css'],
-                complete: loadApp
-            });
-        })
-        // Load the HTML4 version if there's not CSS transform
-    </script>
-
+        <!-- 开启相册 -->
+        <div id="start_memories"></div>
+        <div></div>
+    </section>
+    <!-- 遮罩层 -->
+    <section class="mask" id="mask"></section>
 </body>
-
 </html>
 <script src="js/index.js"></script>
