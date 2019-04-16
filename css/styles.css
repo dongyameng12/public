@@ -34,11 +34,12 @@ html section.home > div:nth-child(2),
 body section.home > div:nth-child(2) {
   position: relative;
   z-index: 1;
+  top: -0.6rem;
 }
 html section.home > div:nth-child(2) > div:nth-child(1),
 body section.home > div:nth-child(2) > div:nth-child(1) {
   width: 7.5rem;
-  height: 9.38rem;
+  height: 8.88rem;
 }
 html section.home > div:nth-child(2) > div:nth-child(2),
 body section.home > div:nth-child(2) > div:nth-child(2) {
@@ -70,6 +71,7 @@ body section.home > div:nth-child(3) {
   z-index: 100;
   left: 0;
   right: 0;
+  top: -0.6rem;
   margin: auto;
 }
 html section.home > div:nth-child(4),
