@@ -22,7 +22,7 @@ var num = 0;
 
 // 输入数字长度监控
 function getCoumt () {
-    let val_length = $('.textpj').val().length
+    var val_length = $('.textpj').val().length
     $('.current_count').text(val_length)
     
 }
@@ -38,7 +38,7 @@ $(document).on('click','.service_comment li',function () {
     $(this).css('background-image',"url('images/star_02.png')")
     $(this).prevAll().css('background-image','url("images/star_02.png")')
     $(this).nextAll().css('background-image','url("images/star_01.png")')
-    let class_obj = $(this).prop('class')
+    var class_obj = $(this).prop('class')
     change_text(class_obj)
 })
 
@@ -73,15 +73,10 @@ function change_text (class_obj) {
             }
             evalALl = ['非常准时','改约靠谱','耐心细致','处理快速','效率高','很专业']
         }
-        // evalALl.map((item,index) => {
-        //     let p_obj = `<p  class='ponter'>${item}</p>`
-        //     $('.managerp').append(p_obj)
-        // })
-        evalALl.map(function (item, index) {
-            var p_obj = "<p  class='ponter'>".concat(item, "</p>");
-            $('.managerp').append(p_obj);
-          });
-     
+        evalALl.forEach(function (item,index) {
+            var p_obj = "<p class='ponter'>"+item+"</p>"
+            $('.managerp').append(p_obj)
+        })
     } else if (class_obj.includes('co')) {
         $('.commentp').html('')
         let evalALl2 = []
@@ -116,12 +111,10 @@ function change_text (class_obj) {
         //     let p_obj = `<p class='ponter'>${item}</p>`
         //     $('.commentp').append(p_obj)
         // })
-        
-        evalALl2.map(function (item, index) {
-            var p_obj = "<p class='ponter'>".concat(item, "</p>");
+        evalALl2.forEach(function(item,index){
+            var p_obj = "<p class = 'ponter'>"+item+"</p>";
             $('.commentp').append(p_obj);
-        });
-            
+        })
     }
 }
 
