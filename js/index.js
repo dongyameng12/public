@@ -74,7 +74,7 @@ function change_text (class_obj) {
             evalALl = ['非常准时','改约靠谱','耐心细致','处理快速','效率高','很专业']
         }
         evalALl.map((item,index) => {
-            let p_obj = `<p>${item}</p>`
+            let p_obj = `<p  class='ponter'>${item}</p>`
             $('.managerp').append(p_obj)
         })
     } else if (class_obj.includes('co')) {
@@ -111,6 +111,7 @@ function change_text (class_obj) {
             let p_obj = `<p class='ponter'>${item}</p>`
             $('.commentp').append(p_obj)
         })
+       
     }
 }
 
