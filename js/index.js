@@ -108,7 +108,7 @@ function change_text (class_obj) {
             evalALl2 = ['申请渠道多','申请流程简便','联系快','主动及时预约','支持一键预约']
         }
         evalALl2.map((item,index) => {
-            let p_obj = `<p>${item}</p>`
+            let p_obj = `<p class='ponter'>${item}</p>`
             $('.commentp').append(p_obj)
         })
     }
