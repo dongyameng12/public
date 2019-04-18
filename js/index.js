@@ -31,7 +31,7 @@ $(document).on('click','.service_manager li',function () {
     $(this).css('background-image',"url('images/star_02.png')")
     $(this).prevAll().css('background-image','url("images/star_02.png")')
     $(this).nextAll().css('background-image','url("images/star_01.png")')
-    let class_obj = $(this).prop('class')
+    var class_obj = $(this).prop('class')
     change_text(class_obj)
 })
 $(document).on('click','.service_comment li',function () {
@@ -45,8 +45,8 @@ $(document).on('click','.service_comment li',function () {
 function change_text (class_obj) {
     if (class_obj.includes('ma')) {
         $('.managerp').html('')
-        let evalALl = []
-        let number_class = class_obj.replace('manager_','')
+        var evalALl = []
+        var number_class = class_obj.replace('manager_','')
         if (number_class == 1 || number_class == 2 || number_class == 3) {
             switch (number_class)
             {
@@ -79,8 +79,8 @@ function change_text (class_obj) {
         })
     } else if (class_obj.includes('co')) {
         $('.commentp').html('')
-        let evalALl2 = []
-        let number_class = class_obj.replace('comment_','')
+        var evalALl2 = []
+        var number_class = class_obj.replace('comment_','')
         if (number_class == 1 || number_class == 2 || number_class == 3) {
             switch (number_class)
             {
