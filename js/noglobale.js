@@ -1,4 +1,4 @@
-﻿(function (doc, win) {
+(function (doc, win) {
     var docEl = doc.documentElement,
         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
         recalc = function () {
@@ -66,12 +66,11 @@ $(document).ready(function () {
     }
    }); 
    
+
     //点击我的权益
-    // 银卡以上(默认)
-    var yinup = true;
     $('#wenhao').on('click',function(){
         showMask();
-        yinup? $('.pop_yins').show():$('.pop_yinx').show();
+       $('.pop').show();
     })
     // 关闭
     $('.close').on('click',function(){
